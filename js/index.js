@@ -34,6 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        alert("ready");
+        console.log(navigator.camera)
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
