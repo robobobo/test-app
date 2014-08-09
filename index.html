@@ -38,9 +38,14 @@
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+                document.addEventListener('deviceready', readyCallback, false);
+                function readyCallback(){
+                    alert("Device should now be ready");
+                    alert(navigator.camera);
+                    console.log(navigator.camera)
+                     
+                }
         </script>
     </body>
 </html>
